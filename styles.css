@@ -1,0 +1,140 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 700px; /* Increased height for a larger poster image */
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.hero-text h1 {
+    font-size: 4rem; /* Increased font size for a larger title */
+    font-weight: bold;
+}
+
+.hero-text p {
+    font-size: 2rem; /* Increased font size for a more prominent tagline */
+    margin-top: 10px;
+}
+
+/* About Section */
+.about-section {
+    padding: 30px;
+    background-color: white;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Featured Section */
+.featured-section {
+    padding: 30px;
+    background-color: #fff;
+}
+
+.featured-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.featured-movies {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.movie-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    width: 220px;
+}
+
+.movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.movie-card h3 {
+    font-size: 1.3rem;
+    margin: 15px 0;
+}
+
+.movie-card p {
+    font-size: 1rem;
+    color: #555;
+    padding: 0 10px 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .featured-movies {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .movie-card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem; /* Adjust font size for smaller screens */
+    }
+
+    .hero-text p {
+        font-size: 1.5rem; /* Adjust tagline font size for smaller screens */
+    }
+}
